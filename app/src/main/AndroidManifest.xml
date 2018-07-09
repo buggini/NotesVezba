@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rs.aleph.android.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="rs.aleph.android.test.aplikacija.activity.ListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Notes">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".aplikacija.activity.Detail"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Notes Detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="rs.aleph.android.test.aplikacija.preferences.Prefererences"
+            android:label="@string/activity_settings_name"
+            android:parentActivityName=".aplikacija.activity.ListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+
+</manifest>
